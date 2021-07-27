@@ -1,0 +1,103 @@
+/* CSSでデザインを設定してみてね */
+/* Fooda pandaのヘッダー背景カラーは#FFCB80だよ */
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header{
+/* ここにヘッダーのデザイン設定を書き足してね */
+  padding: 20px 0;
+  background-color: #FFCB80;
+  margin-bottom: 40px;
+}
+
+/* ↓↓ヘッダーの画像設定を追加しました */
+.header img {
+  margin: 0 auto;
+  width: 150px;
+}
+
+p.intro{
+  margin: 20px auto;
+}
+
+a{
+/* ここにGoボタンのデザイン設定を書き足してね */
+/* aタグについて https://www.w3schools.com/css/css_link.asp */
+/* 角を丸くする https://www.webcreatorbox.com/tech/border-radius */
+  background-color: #FFCB80;
+  border-radius: 10px;
+  display: block;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* ↓↓↓ここからレシピのデザイン設定だよ↓↓↓ */
+
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  padding-bottom: 20px;
+  width: 32%;
+  background-color: #fff;
+/* ここにレシピの枠のデザイン設定を書き足してね */
+  border: 2px solid #FFCB80;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+@media not all and (min-width: 768px) {
+  .item {
+    width: 100%;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+/* ↑↑↑ここまでがレシピのデザイン設定だよ↑↑↑*/
+/* Flexboxレイアウトについては、こちらをみてね→ https://pulpxstyle.com/flexbox/ */
+
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #FFCB80;
+  padding: 10px;
+}
+
+th {
+  background-color: #FFF8ED;
+}
+
+p.footer{
+  font-size: 0.9em;
+}
